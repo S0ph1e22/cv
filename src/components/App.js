@@ -4,10 +4,10 @@ import Navbar from './Navbar';
 
 function App() {
   return (
-    <>
+    <div className='navigation'>
         <Banner />
         <Navbar />
-    </>
+    </div>
   );
 }
 

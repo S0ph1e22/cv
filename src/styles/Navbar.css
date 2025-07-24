@@ -1,0 +1,14 @@
+.lien-nav {
+  display: flex;
+  gap: 50px;                  
+}
+
+.lien-nav a {
+  text-decoration: none;       
+  color: black;                
+  font-size: 30px;        
+}
+
+.lien-nav a:hover {
+  text-decoration: underline;             
+}
