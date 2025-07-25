@@ -1,0 +1,25 @@
+.progressbarre {
+  margin-bottom: 20px;
+}
+
+.progress-name {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.progress-barre {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #3498db;
+  width: 0;
+  transition: width 0.6s ease-in-out;
+}
