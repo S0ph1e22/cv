@@ -1,8 +1,12 @@
 import '../styles/Title.css';
 
-function Title() {
+function Title({text, backgroundColor}) {
+    const style = {
+        backgroundColor: backgroundColor || '#F5F5F5'
+    }
+
     return (
-       <h1 className='title'> A propos de moi </h1>
+       <h1 className='title' style={style}> {text} </h1>
     )
 }
 

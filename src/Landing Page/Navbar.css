@@ -1,0 +1,27 @@
+.lien-nav {
+  position: fixed; 
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+  background-color: transparent;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 100%;
+}
+
+.lien-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+.lien-nav a:hover {
+  text-decoration: underline;
+}
+
+.lien-nav.scrolled {
+  background-color: #0e7698; 
+  backdrop-filter: none;
+}

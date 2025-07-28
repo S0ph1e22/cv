@@ -1,25 +1,31 @@
 .progressbarre {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+    width: 700px;
 }
 
 .progress-name {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #333;
+    font-weight: bold;
+}
+
+.progress-text {
+    font-weight: bold;
+    justify-content: right;
+    display: flex;
+    font-size: 12px;
 }
 
 .progress-barre {
-  background-color: #e0e0e0;
-  border-radius: 10px;
-  height: 20px;
-  width: 100%;
-  overflow: hidden;
+    width: 100%;
+    height: 15px;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 5px;
 }
 
 .progress-fill {
-  height: 100%;
-  background-color: #3498db;
-  width: 0;
-  transition: width 0.6s ease-in-out;
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 0.4s ease-in-out;
+    border-radius: 8px;
 }

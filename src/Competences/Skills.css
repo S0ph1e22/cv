@@ -1,6 +1,7 @@
-h1{
-    font-weight: normal;
+h3{
     text-align: center;
-    padding-top: 35px;
-    margin: 0px;
+}
+
+.competence-section > div {
+  margin-bottom: 50px; 
 }
