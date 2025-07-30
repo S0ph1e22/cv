@@ -1,8 +1,8 @@
-import img1 from '../assets/1.png'
-import img2 from '../assets/2.png'
-import img3 from '../assets/3.png'
+import booki from '../assets/booki.png'
+import architecte from '../assets/architecte.png'
+import monVieuxGrimoir from '../assets/monvieuxgrimoire.png'
 import img4 from '../assets/4.png'
-import img5 from '../assets/5.png'
+import Kasa from '../assets/kasa.png'
 import { FaHtml5, FaCss3Alt, FaJsSquare,FaNodeJs,FaReact,FaSass,FaPhp } from "react-icons/fa";
 import { BiLogoMongodb } from "react-icons/bi";
 import { SiExpress } from "react-icons/si";
@@ -11,7 +11,7 @@ import { SiExpress } from "react-icons/si";
 const projets = [
   {
     id: 1,
-    image: img1,
+    image: booki,
     lien: "🔗 Booki",
     description : "Création de la page d'accueil du site de l'agence Booki (HTML/CSS)",
     url:'https://www.google.com/',
@@ -20,7 +20,7 @@ const projets = [
   },
   {
     id: 2,
-    image: img2,
+    image: architecte,
     lien: "🔗Sophie Bluel",
     description : "Portfolio d'une architecte d'intérieur (Javascript)",
     url:'https://www.google.com/',
@@ -29,7 +29,7 @@ const projets = [
   },
   {
     id: 3,
-    image: img3,
+    image: monVieuxGrimoir,
     lien: "🔗Mon vieux grimoire",
     description : " Développement du back-end du site mon vieux grimoire (Javascript, Express, MongoDB)",
     url:'https://www.google.com/',
@@ -47,7 +47,7 @@ const projets = [
   },
     {
     id: 5,
-    image: img5,
+    image: Kasa,
     lien: "🔗Kasa",
     description : " Implémenter le front-end du site Kasa (Javascript, NodeJs, React)",
     url:'https://www.google.com/',
