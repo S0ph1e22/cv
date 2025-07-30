@@ -1,9 +1,8 @@
 import TxtAPropos from '../A propos/TxtAPropos';
 import '../Landing Page/LandingPage.css';
+import DownloadButton from './DownloadButton';
 import Navbar from './Navbar';
-import { FaGithub } from 'react-icons/fa';
-
-
+import { FaGithub} from 'react-icons/fa';
 
 function LandingPage() {
     return (
@@ -31,6 +30,7 @@ function LandingPage() {
                      <FaGithub />
                     GitHub
                 </a>
+                <DownloadButton />
             </div>
         </div>
     )

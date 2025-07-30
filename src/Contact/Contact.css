@@ -1,13 +1,12 @@
-.portfolio{
+.contact{
   display: flex;
   height: auto;
-  padding-top: 48px;
   padding-left: 40px;
   padding-bottom: 48px;
-  flex-direction: column;
 }
 
-.title-portfolio{
+
+.title-contact{
     font-weight: normal;
     height: 40px;
     width: auto;

@@ -19,7 +19,7 @@
 
 .image-right {
   flex-direction: row-reverse;
-   border: 2px solid #F8F9FA;
+  border: 2px solid #F8F9FA;
 }
 
 .projet-image img{
@@ -102,7 +102,6 @@
   display: inline-flex;
   padding: 2px;
   align-items: center;
-  
   transition: transform 0.3s ease;
 }
 

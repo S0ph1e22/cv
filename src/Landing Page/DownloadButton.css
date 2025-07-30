@@ -1,7 +1,18 @@
 .btn-download {
   color: black;
   text-decoration: none;
-  border-radius: 5px;
-  font-size: 25px;
+  font-size: 20px;
   text-align: left;
+  border: 2px solid black;
+  padding: 5px;
+  transition: transform 0.3s ease;
+  gap: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-download:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
 }

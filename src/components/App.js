@@ -2,10 +2,7 @@ import '../styles/App.css';
 import LandingPage from '../Landing Page/LandingPage';
 import APropos from '../A propos/APropos';
 import Competence from '../Competences/Competence';
-
-
-import Title from './Title';
-import ProjetGrid from '../Portfolio/ProjetGrid';
+import Contact from '../Contact/Contact';
 import Portfolio from '../Portfolio/Portfolio';
 
 
@@ -30,8 +27,8 @@ function App() {
         
       </div>
 
-      <div id='Contact' className='contact'>
-        <Title text='Contactez-moi' backgroundColor='#FAF2EA'/>
+      <div id='Contact'>
+        <Contact />
       </div>
     </div>
   );
