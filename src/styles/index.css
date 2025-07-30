@@ -12,4 +12,6 @@ code {
     monospace;
 }
 
-
+#root{
+  max-width: 1240px;
+}

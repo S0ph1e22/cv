@@ -11,7 +11,7 @@ function Skills () {
     const frontendSkills = [
         { label: 'HTML', value:0.7},
         { label: 'CSS', value:0.5},
-        { label: 'JavaScript', value:0.5},
+        { label: 'JavaScript / JQuery', value:0.5},
     ]
 
     const cmsSkills = [

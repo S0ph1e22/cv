@@ -1,4 +1,4 @@
-import '../Competences/DownloadButton.css'
+import '../Landing Page/DownloadButton.css'
 
 function DownloadButton() {
   return (
