@@ -6,12 +6,15 @@ function Skills () {
         { label: 'Node.js', value:0.7},
         { label: 'PHP', value:0.3},
         { label: 'Python', value:0.3},
+        { label: 'Django', value:0.3},
+        { label: 'MySQL', value:0.3},
     ]
 
     const frontendSkills = [
         { label: 'HTML', value:0.7},
-        { label: 'CSS', value:0.5},
+        { label: 'CSS/SCSS', value:0.5},
         { label: 'JavaScript / JQuery', value:0.5},
+        { label: 'React.js', value:0.5},
     ]
 
     const cmsSkills = [
