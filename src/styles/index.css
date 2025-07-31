@@ -15,4 +15,5 @@ code {
 #root{
   max-width: 1240px;
   margin: 0 auto;
+  padding-left: 40px;
 }

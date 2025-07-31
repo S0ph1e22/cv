@@ -1,7 +1,15 @@
 h3{
-    text-align: center;
+  text-align: center;
+  font-size: 23px;
 }
 
 .competence-section > div {
   margin-bottom: 50px; 
+}
+
+.competence-section{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }

@@ -1,16 +1,19 @@
 .contact{
   display: flex;
   height: auto;
-  padding-left: 40px;
   padding-bottom: 48px;
+  justify-content: center;
 }
 
-
 .title-contact{
-    font-weight: normal;
-    height: 40px;
-    width: auto;
-    font-size: 30px;
-    border-top: 2px solid black;
-    display: inline-block;
+  font-weight: normal;
+  font-size: 30px;
+  border-top: 2px solid black;
+  display: inline-block;
+  text-align: left;
+}
+
+.container-contact{
+  width: 100%;
+  max-width: 1240px;
 }

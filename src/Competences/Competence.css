@@ -1,16 +1,21 @@
 .competence{
-  display: flex;
-  height: 800px;
+  height: auto;
   padding-top: 48px;
-  padding-left: 40px;
-  padding-bottom: 48px;
- 
+  justify-content: center;
+  display: flex;
+  gap: 20px;
 }
 
 .title-competence{
-    font-weight: normal;
-    height: 40px;
-    width: auto;
-    font-size: 30px;
-    border-top: 2px solid black;
+  font-weight: normal;
+  font-size: 30px;
+  border-top: 2px solid black;
+  display: inline-block;
+  text-align: left;
+
+}
+
+.container-competence{
+  width: 100%;
+  max-width: 1240px;
 }

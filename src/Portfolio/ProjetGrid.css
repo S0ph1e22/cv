@@ -103,6 +103,7 @@
   padding: 2px;
   align-items: center;
   transition: transform 0.3s ease;
+  margin-top: 20px;
 }
 
 .btn-github-projet:hover{
