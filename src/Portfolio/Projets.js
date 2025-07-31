@@ -1,7 +1,7 @@
 import booki from '../assets/booki.png'
 import architecte from '../assets/architecte.png'
 import monVieuxGrimoir from '../assets/monvieuxgrimoire.png'
-import img4 from '../assets/img4.png'
+import burger from '../assets/burger.png'
 import Kasa from '../assets/kasa.png'
 import { FaHtml5, FaCss3Alt, FaJsSquare,FaNodeJs,FaReact,FaSass,FaPhp } from "react-icons/fa";
 import { BiLogoMongodb } from "react-icons/bi";
@@ -38,7 +38,7 @@ const projets = [
   },
     {
     id: 4,
-    image: img4,
+    image: burger,
     lien: "🔗Burger",
     description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do',
     url:'https://www.google.com/',
