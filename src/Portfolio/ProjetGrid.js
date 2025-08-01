@@ -1,8 +1,16 @@
 import "./ProjetGrid.css";
 import projets from "./Projets";
 import { FaGithub } from "react-icons/fa";
+import AOS from "aos";
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
+
 
 function ProjetGrid() {
+  useEffect(() => {
+  AOS.init({ duration: 600, once: true });
+}, []);
+
 
   return (
     <div className="grid">
@@ -10,6 +18,7 @@ function ProjetGrid() {
             <div 
             key={projet.id} 
             className={`projet-row ${index % 2 === 0 ? "image-left" : "image-right"}`}
+             data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
             >
          <div className="projet-image">
           <div className="projet-card">
