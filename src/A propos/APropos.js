@@ -12,7 +12,11 @@ function APropos(){
                 <ImgCard imageSrc={portrait}/>
                 <TxtAPropos variant="normal">
                     <Title text='A propos de moi' className="title-apropos" />
-                    <p> texte description moi, border a virer </p>
+                    <p> Développeuse web full-stack junior, je conçois des sites et applications en alliant front-end et back-end.
+                        Formée aux technologies telles que HTML, CSS, JavaScript, React, ainsi que Node.js et MongoDB, j’aime créer des applications claires, efficaces et agréables à utiliser, du design à la logique métier.
+                        J’aime relever des défis techniques, apprendre de nouvelles technologies et construire des projets de A à Z.
+                        Curieuse, rigoureuse et autonome, je suis à la recherche d’une opportunité pour contribuer à des projets concrets au sein d’une équipe dynamique. 
+                    </p>
                 </TxtAPropos>
             </div>
         </section>

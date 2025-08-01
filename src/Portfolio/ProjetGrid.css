@@ -19,7 +19,7 @@
 
 .image-right {
   flex-direction: row-reverse;
-  border: 2px solid #F8F9FA;
+  background-color:black ;
 }
 
 .projet-image img{
@@ -76,6 +76,21 @@
   text-align: left;
 }
 
+.texte-blanc {
+  color: white;
+}
+
+.texte-noir {
+  color: black;
+}
+
+.projet-description {
+  white-space: pre-line;
+  text-align: justify;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .projet-row.image-right .projet-texte h3 {
   text-align: right;
 }
@@ -92,6 +107,15 @@
 .lien-cliquable:hover {
   text-decoration: underline;
   transform: scale(1.05);
+}
+
+.lien-noir {
+  color: black;
+}
+
+.lien-blanc {
+  color: white;
+  padding-right: 30px;
 }
 
 .btn-github-projet{

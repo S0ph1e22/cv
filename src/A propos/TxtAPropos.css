@@ -8,9 +8,8 @@
 
 .txt-a-propos-normal{
     font-size: 20px;
-    border: 1px solid #DDDDDD;
     text-align: justify;
     width: 500px;
     color: white;
-    height: 200px;
+    height: auto;
 }
