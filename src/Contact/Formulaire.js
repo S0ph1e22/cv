@@ -4,6 +4,8 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 import emailjs from 'emailjs-com';
 
+emailjs.init('rLy8O5saW39xVGzzpr2mh');
+
 function Formulaire() {
   const [formData, setFormData] = useState({
     nom: '',
@@ -22,12 +24,15 @@ function Formulaire() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.send(
-      'service_g9rnpog',
-      'template_7mlfet5',
-      formData,
-      'ZCbuQ9K_UOvHDuAyZ'
-    )
+  emailjs.send(
+    process.env.REACT_APP_EMAILJS_SERVICE_ID,
+    process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+    formData,
+    process.env.REACT_APP_EMAILJS_USER_ID
+  )
+
+
+
     .then(() => {
       setSuccess(true);
       setError(false);
