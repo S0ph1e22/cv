@@ -1,18 +1,18 @@
-import '../Contact/Formulaire.css'
+import '../Contact/Formulaire.css';
 import { useState } from 'react';
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
+import emailjs from 'emailjs-com';
 
-
-
-function Formulaire(){
-    const [formData, setFormData] = useState({
+function Formulaire() {
+  const [formData, setFormData] = useState({
     nom: '',
     email: '',
     message: '',
   });
 
   const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,10 +21,22 @@ function Formulaire(){
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Ici tu peux envoyer les données à une API ou par email
-    console.log(formData);
-    setSuccess(true);
-    setFormData({ nom: '', email: '', message: '' });
+
+    emailjs.send(
+      'service_g9rnpog',
+      'template_7mlfet5',
+      formData,
+      'ZCbuQ9K_UOvHDuAyZ'
+    )
+    .then(() => {
+      setSuccess(true);
+      setError(false);
+      setFormData({ nom: '', email: '', message: '' });
+    })
+    .catch(() => {
+      setError(true);
+      setSuccess(false);
+    });
   };
 
   return (
@@ -55,18 +67,22 @@ function Formulaire(){
           required
         />
         <button type="submit">Envoyer</button>
-        {success && <p className="success-msg">Message envoyé avec succès !</p>}
+        {success && <p className="success-msg">✅ Message envoyé avec succès !</p>}
+        {error && <p className="error-msg">❌ Une erreur est survenue. Veuillez réessayer.</p>}
       </form>
+      
       <div className='info-contact'>
         <p className='tel'>
-            <FiPhoneCall />
-             +33 6 16 53 55 79</p>
+          <FiPhoneCall />
+          +33 6 16 53 55 79
+        </p>
         <p className='email'>
-            <MdOutlineMailOutline />
-            sophievincent25@sfr.fr </p>
+          <MdOutlineMailOutline />
+          sophievincent25@sfr.fr
+        </p>
       </div>
     </div>
   );
 }
 
-export default Formulaire
+export default Formulaire;
