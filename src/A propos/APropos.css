@@ -31,7 +31,7 @@
   }
 
   .title-apropos{
-    font-size: clamp(25px,40vw,30px);
+    font-size: clamp(25px,4vw,30px);
     text-align: center;
   }
 }

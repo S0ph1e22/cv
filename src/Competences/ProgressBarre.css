@@ -35,3 +35,24 @@
     padding-right: 5px;
     overflow: hidden;
 }
+
+@media screen and (max-width: 768px) {
+
+  .progressbarre{
+    width: 100%;
+  }
+
+  .progress-name{
+    font-size: clamp(12px, 2vw, 15px);
+  }
+
+  .progress-barre{
+    height: clamp(15px,4vw,25px);
+  }
+
+  .progress-text{
+    font-size: clamp(10px,2vw,12px);
+  }
+}
+
+

@@ -12,4 +12,18 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.competence-section > div {
+  width: 100%;
+  max-width: 800px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .competence-section h3{
+    font-size: clamp(15px,4vw,23px);
+  }
 }
