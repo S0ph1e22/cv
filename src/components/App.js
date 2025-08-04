@@ -4,7 +4,7 @@ import APropos from '../A propos/APropos';
 import Competence from '../Competences/Competence';
 import Contact from '../Contact/Contact';
 import Portfolio from '../Portfolio/Portfolio';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

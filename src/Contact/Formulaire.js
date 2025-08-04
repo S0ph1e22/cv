@@ -31,8 +31,6 @@ function Formulaire() {
     process.env.REACT_APP_EMAILJS_USER_ID
   )
 
-
-
     .then(() => {
       setSuccess(true);
       setError(false);
