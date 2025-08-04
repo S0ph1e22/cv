@@ -136,3 +136,35 @@
   color: white;
   transform: scale(1.05);
 }
+
+@media screen and (max-width: 768px) {
+  .projet-row {
+    display: flex;
+    flex-direction: column;  
+    text-align: center;
+
+}
+.projet-description{
+  font-size: clamp(15px, 3.5vw, 20px);
+}
+
+.lien-cliquable {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-size: clamp(15px, 4vw, 23px);
+}
+
+.projet-image img{
+    width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+.projet-card {
+  width: 100%;
+  height: auto;
+}
+}
+
+
