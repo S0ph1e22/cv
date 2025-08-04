@@ -89,10 +89,15 @@
   text-align: justify;
   padding-right: 20px;
   padding-left: 20px;
+  font-size: 15px;
 }
 
 .projet-row.image-right .projet-texte h3 {
   text-align: right;
+}
+
+.projet-texte h3 {
+  margin-bottom: 13px;
 }
 
 .lien-cliquable {
@@ -137,15 +142,24 @@
   transform: scale(1.05);
 }
 
+
+@media (min-width: 769px) and (max-width:1213px){
+   .projet-row {
+    display: flex;
+    flex-direction: column;  
+    text-align: center;
+}
+}
+
 @media screen and (max-width: 768px) {
   .projet-row {
     display: flex;
     flex-direction: column;  
     text-align: center;
-
 }
+
 .projet-description{
-  font-size: clamp(15px, 3.5vw, 20px);
+  font-size: clamp(10px, 2vw, 15px);
 }
 
 .lien-cliquable {
@@ -164,6 +178,15 @@
 .projet-card {
   width: 100%;
   height: auto;
+}
+
+.projet-texte.texte-blanc,
+.projet-texte.texte-noir{
+  margin-top: -20px;
+}
+
+.grid{
+  gap: 50px;
 }
 }
 

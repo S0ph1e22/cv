@@ -1,6 +1,7 @@
 .progressbarre {
     margin-bottom: 20px;
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
 }
 
 .progress-name {

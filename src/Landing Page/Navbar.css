@@ -1,18 +1,28 @@
 .lien-nav {
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
-  max-width: 1240px;
   background-color: white;
   padding: 20px 0;
-  margin: 0 auto;
   z-index: 3;
+  box-sizing: border-box;
 }
 
 .nav-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 .nav-container a {
@@ -98,6 +108,5 @@
     .burger.open .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-      
 }
 

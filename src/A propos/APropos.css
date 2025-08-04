@@ -1,3 +1,7 @@
+div#Profil{
+  padding-bottom: 48px;
+}
+
 .section-a-propos{
   display: flex;
   align-items: center;  
