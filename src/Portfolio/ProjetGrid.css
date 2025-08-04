@@ -159,7 +159,7 @@
 }
 
 .projet-description{
-  font-size: clamp(10px, 2vw, 15px);
+  font-size: clamp(12px, 2vw, 15px);
 }
 
 .lien-cliquable {
@@ -188,6 +188,15 @@
 .grid{
   gap: 50px;
 }
+
+.tech-icon{
+  font-size: clamp(30px,4vw,48px);
+}
+
+.btn-github-projet{
+  font-size: clamp(15px,2vw,20px);
+}
+
 }
 
 
