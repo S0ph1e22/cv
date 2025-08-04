@@ -59,3 +59,17 @@
   transform: scale(1.05);
 }
 
+@media screen and (max-width: 768px) {
+  .mon-nom{
+    font-size: clamp(30px,8vw,48px);
+  }
+
+  .mon-job{
+    font-size: clamp(15px,5vw,30px);
+  }
+
+  .btn-github,
+  .btn-download{
+    font-size: clamp(10px,2vw,20px);
+  }
+}
