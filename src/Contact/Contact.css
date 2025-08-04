@@ -17,3 +17,18 @@
   width: 100%;
   max-width: 1240px;
 }
+
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  
+  .info-contact {
+    margin-top: 20px;
+  }
+
+  .title-contact{
+    font-size: clamp(25px,4.5vw,30px);
+  }
+}

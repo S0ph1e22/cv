@@ -66,3 +66,10 @@
   align-items: center;
   gap: 10px;
 }
+
+@media screen and (max-width: 768px) {
+  .info-contact,
+  .contact-form{
+    width: 100%;
+  }
+}
