@@ -16,3 +16,10 @@
   color: white;
   transform: scale(1.05);
 }
+
+@media screen and (max-width: 768px) {
+  
+  .btn-download{
+    font-size: clamp(10px,2vw,20px);
+  }
+}
