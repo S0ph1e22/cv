@@ -1,4 +1,19 @@
 .image {
-    height: 400px;
-    width: 300px;
+  max-width: 100%;  
+  height: auto;     
+  max-height: 400px; 
+}
+
+@media screen and (max-width: 768px) {
+  .image {
+    display: block;
+    max-width: 100%;
+    height: clamp(200px, 40vw, 300px); 
+    width: auto;
+    padding-top: 20px;
+  }
+  .img-card {
+    min-height: 200px;
+    height: auto;
+  }
 }

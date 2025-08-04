@@ -9,7 +9,19 @@
 .txt-a-propos-normal{
     font-size: 20px;
     text-align: justify;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     color: white;
     height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .txt-a-propos-normal {
+    font-size: clamp(15px, 3.5vw, 20px);
+    margin-top: -30px;
+    width: auto;
+    padding: 10px;
+    max-width: 100%;
+
+  }
 }
