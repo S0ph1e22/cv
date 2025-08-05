@@ -1,10 +1,11 @@
 .competence{
   height: auto;
   padding-top: 48px;
+  padding-bottom: 48px;
   justify-content: center;
   display: flex;
   gap: 20px;
-   flex-direction: column; /* ✅ Ajouté */
+  flex-direction: column; /* ✅ Ajouté */
   align-items: center;   
 }
 

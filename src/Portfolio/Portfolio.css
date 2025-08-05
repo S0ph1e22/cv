@@ -14,3 +14,9 @@
     border-top: 2px solid black;
     display: inline-block;
 }
+
+@media screen and (max-width: 768px) {
+  .title-portfolio{
+    font-size: clamp(25px, 4.5vw, 30px);
+  }
+}

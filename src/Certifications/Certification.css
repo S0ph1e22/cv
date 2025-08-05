@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; 
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 1240px;
+  width: 100%;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: black;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.carousel-btn {
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  width: 100%;     
+  max-width: 940px;
+  margin: 0;   
+  padding: 0; 
+}
+
+.carousel-item {
+  flex-shrink: 1;
+  flex-grow: 0;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;    
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  max-height: 210px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.compteur {
+  margin-top: 30px;
+  justify-content: center;
+  display: flex;
+  color: black;
+}
+
+.title-certificats{
+    font-weight: normal;
+    font-size: 30px;
+    border-top: 2px solid black;
+    display: inline-block;
+    text-align: left;
+}
+
+@media (min-width: 769px) and (max-width:1213px){
+  .carousel-track {
+    max-width: 100%;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+  }
+
+  .carousel-item {
+    flex-basis: calc((100% - 20px) / 2);
+    max-width: none;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+ .carousel-track {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .carousel-item {
+    flex-basis: 100%;
+    max-width: none; 
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .title-certificats{
+    font-size: clamp(25px, 4.5vw, 30px);
+  }
+}

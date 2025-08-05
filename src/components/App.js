@@ -5,6 +5,7 @@ import Competence from '../Competences/Competence';
 import Contact from '../Contact/Contact';
 import Portfolio from '../Portfolio/Portfolio';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Certification from '../Certifications/Certification.js'
 
 function App() {
   return (
@@ -22,9 +23,12 @@ function App() {
         <Competence/>
       </div>
 
+      <div id='Certifications'>
+          <Certification/>
+      </div>
+
       <div id='Portfolio'>
         <Portfolio />
-        
       </div>
 
       <div id='Contact'>

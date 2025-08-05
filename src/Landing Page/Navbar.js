@@ -20,8 +20,9 @@ function Navbar() {
           <a href='#Accueil' onClick={handleLinkClick}>Accueil</a>
           <a href='#Profil' onClick={handleLinkClick}>Profil</a>
           <a href='#Competences' onClick={handleLinkClick}>Compétences</a>
+          <a href='#Certifications' onClick={handleLinkClick}>Certifications</a>
           <a href='#Portfolio' onClick={handleLinkClick}>Portfolio</a>
-          <a href='#Contact' onClick={handleLinkClick}>Contact</a>
+          <a href='#Contact' onClick={handleLinkClick}>Contact</a>          
         </div>
       </div>
     </nav>
