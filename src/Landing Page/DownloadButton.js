@@ -4,7 +4,7 @@ import { FaCloudDownloadAlt  } from 'react-icons/fa';
 function DownloadButton() {
   return (
     <a 
-    href="/monCv.pdf" 
+    href="/Sophie Vincent.pdf" 
     download className="btn-download"
     title="Télécharger mon CV"
     >

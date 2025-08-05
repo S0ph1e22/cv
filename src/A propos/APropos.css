@@ -1,5 +1,6 @@
 div#Profil{
   padding-bottom: 48px;
+  padding-top: 48px;
 }
 
 .section-a-propos{
@@ -25,6 +26,10 @@ div#Profil{
 }
 
 @media screen and (max-width: 768px) {
+
+  div#Profil{
+  padding-top:0px;
+}
   .content-a-propos{
     flex-direction: column;
     width: 100%;
