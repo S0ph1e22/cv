@@ -2,15 +2,18 @@ import '../Landing Page/LandingPage.css';
 import DownloadButton from './DownloadButton';
 import Navbar from './Navbar';
 import { FaGithub} from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 function LandingPage() {
+    const { t } = useTranslation();
+
     return (
         <div className="landing-page">
             <Navbar />
 
             <div className='info'>
                 <h1 className='mon-nom'> Sophie Vincent </h1>
-                <p className='mon-job'> Développeur web</p>
+                <p className='mon-job'> {t('job_title')}</p>
             </div>
 
            <div className="section-github">

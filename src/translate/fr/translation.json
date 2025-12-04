@@ -1,0 +1,27 @@
+{
+  "about_accueil": "Accueil",
+  "about_profil": "Profil",
+  "skills_title": "Compétences",
+  "certifications_title": "Certifications",
+  "about_portfolio": "Portfolio",
+  "contact_title": "Contact",
+  "job_title": "Développeur web",
+  "aboutme_title" : "A propos de moi",
+  "aboutme_description": "Développeuse web full-stack junior, je conçois des sites et applications en alliant front-end et back-end.Formée aux technologies telles que HTML, CSS, JavaScript, React, ainsi que Node.js et MongoDB, j’aime créer des applications claires, efficaces et agréables à utiliser, du design à la logique métier.J’aime relever des défis techniques, apprendre de nouvelles technologies et construire des projets de A à Z. Curieuse, rigoureuse et autonome, je suis à la recherche d’une opportunité pour contribuer à des projets concrets au sein d’une équipe dynamique.",
+  "myskills_title" : "Mes compétences",
+  "outils_title" : "Outils",
+  "certificats_title" : "Mes certificats",
+  "project_title": "Mes projets",
+  "contactme_title": "Contactez-moi",
+  "name_placeholder": " Votre nom",
+  "email_placeholder": "Votre email",
+  "message_placehoder": "Votre message",
+  "btn_send":"Envoyer",
+  "contact_success" : "✅ Message envoyé avec succès !",
+  "contact_error":"❌ Une erreur est survenue. Veuillez réessayer.",
+  "contact_required_name": "Veuillez remplir ce champ",
+  "contact_required_email": "Veuillez remplir ce champ",
+  "contact_required_message": "Veuillez remplir ce champ"
+
+
+}

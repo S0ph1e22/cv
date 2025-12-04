@@ -1,7 +1,10 @@
 import '../Competences/Skills.css';
 import ProgressBarre from './ProgressBarre';
+import { useTranslation } from 'react-i18next';
 
 function Skills () {
+    const { t } = useTranslation();
+
     const backendSkills = [
         { label: 'PHP', value:0.65},
         { label: 'Python', value:0.65},
@@ -14,7 +17,7 @@ function Skills () {
         { label: 'Bootstrap', value:0.6},
         { label: 'CSS/SCSS', value:0.7},
         { label: 'React.js', value:0.7},
-        { label: 'JavaScript / JQuery', value:0.75},
+        { label: 'JavaScript / TypeScript / JQuery', value:0.75},
         { label: 'HTML', value:0.8},
     ]
 
@@ -61,7 +64,7 @@ function Skills () {
             </div>
 
               <div className='outils'>
-                <h3> Outils </h3>
+                <h3> {t('outils_title')} </h3>
                 {outilsSkills.map((skill, index) => (
             <ProgressBarre 
                 key={`frontend-${index}`} 

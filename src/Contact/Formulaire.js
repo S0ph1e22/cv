@@ -3,10 +3,13 @@ import { useState } from 'react';
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 import emailjs from 'emailjs-com';
+import { useTranslation } from 'react-i18next';
 
 emailjs.init('rLy8O5saW39xVGzzpr2mh');
 
 function Formulaire() {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     nom: '',
     email: '',
@@ -48,30 +51,36 @@ function Formulaire() {
         <input
           type="text"
           name="nom"
-          placeholder="Votre nom"
+          placeholder={t('name_placeholder')} 
           value={formData.nom}
           onChange={handleChange}
           required
+          onInvalid={(e) => e.target.setCustomValidity(t('contact_required_name'))}
+          onInput={(e) => e.target.setCustomValidity('')}
         />
         <input
           type="email"
           name="email"
-          placeholder="Votre email"
+          placeholder={t('email_placeholder')} 
           value={formData.email}
           onChange={handleChange}
           required
+          onInvalid={(e) => e.target.setCustomValidity(t('contact_required_email'))}
+          onInput={(e) => e.target.setCustomValidity('')}
         />
         <textarea
           name="message"
-          placeholder="Votre message"
+          placeholder={t('message_placehoder')} 
           rows="5"
           value={formData.message}
           onChange={handleChange}
           required
+          onInvalid={(e) => e.target.setCustomValidity(t('contact_required_message'))}
+          onInput={(e) => e.target.setCustomValidity('')}
         />
-        <button type="submit">Envoyer</button>
-        {success && <p className="success-msg">✅ Message envoyé avec succès !</p>}
-        {error && <p className="error-msg">❌ Une erreur est survenue. Veuillez réessayer.</p>}
+        <button type="submit">{t('btn_send')} </button>
+        {success && <p className="success-msg">{t('contact_success')}</p>}
+        {error && <p className="error-msg">{t('contact_error')}</p>}
       </form>
       
       <div className='info-contact'>

@@ -2,10 +2,13 @@ import { useState, useEffect } from 'react';
 import certifications from './CertificationGrid.js';
 import '../Certifications/Certification.css';
 import Title from '../components/Title.js';
+import { useTranslation } from 'react-i18next';
 
 function Certification() {
   const [index, setIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(3);
+
+  const { t } = useTranslation();
 
   useEffect(() => {
     function handleResize() {
@@ -50,7 +53,7 @@ function Certification() {
   return (
     <>
       <div className="container-title">
-        <Title text='Mes certificats' className="title-certificats" />
+        <Title text={t('certificats_title')} className="title-certificats" />
       </div>
 
       <div className="carousel-container">

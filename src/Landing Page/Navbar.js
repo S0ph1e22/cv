@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import '../Landing Page/Navbar.css';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
+
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
 
   const handleLinkClick = () => {
     setIsOpen(false);
@@ -17,13 +21,17 @@ function Navbar() {
           <span className='bar'></span>
         </button>
         <div className={`nav-links ${isOpen ? 'open' : ''}`}>
-          <a href='#Accueil' onClick={handleLinkClick}>Accueil</a>
-          <a href='#Profil' onClick={handleLinkClick}>Profil</a>
-          <a href='#Competences' onClick={handleLinkClick}>Compétences</a>
-          <a href='#Certifications' onClick={handleLinkClick}>Certifications</a>
-          <a href='#Portfolio' onClick={handleLinkClick}>Portfolio</a>
-          <a href='#Contact' onClick={handleLinkClick}>Contact</a>          
+          <a href='#Accueil' onClick={handleLinkClick}>{t('about_accueil')}</a>
+          <a href='#Profil' onClick={handleLinkClick}>{t('about_profil')}</a>
+          <a href='#Competences' onClick={handleLinkClick}>{t('skills_title')}</a>
+          <a href='#Certifications' onClick={handleLinkClick}>{t('certifications_title')}</a>
+          <a href='#Portfolio' onClick={handleLinkClick}>{t('about_portfolio')}</a>
+          <a href='#Contact' onClick={handleLinkClick}>{t('contact_title')}</a>          
         </div>
+        <div className="lang-switch">
+        <button onClick={() => i18n.changeLanguage('fr')}>FR</button>
+        <button onClick={() => i18n.changeLanguage('en')}>EN</button>
+      </div>
       </div>
     </nav>
   );
